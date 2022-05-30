@@ -6,9 +6,9 @@ import CurNumDisplay from './CurNumDisplay';
 import EquationDisplay from './EquationDisplay';
 
 const App: React.FC = () => {
-    const BUTTONS: string[] = ["1", "4", "7", " ",
-                               "2", "5", "8", "0",
-                               "3", "6", "9", " ",
+    const BUTTONS: string[] = ["7", "4", "1", " ",
+                               "8", "5", "2", "0",
+                               "9", "6", "3", " ",
                                "+", "-", "*", "/",
                                "C", " ", " ", "="];
 

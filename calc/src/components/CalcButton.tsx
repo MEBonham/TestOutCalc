@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CalcButton: React.FC = (charKey: string) => {
+const CalcButton: React.FC = ({ charKey }: string) => {
     return(
         <button>
             {charKey}

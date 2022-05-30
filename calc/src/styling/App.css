@@ -12,3 +12,11 @@
   width: 19%;
   height: 24%;
 }
+
+.App .numScreen {
+  width: 120px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: hsl(178, 73%, 89%);
+  text-align: right;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
-import roundToFourDecimals from '../helpers/roundToFourDecimals';
 
+import { roundDecimals, NUM_DECIMALS } from '../helpers/roundDecimals';
 import useInputs from '../store/InputsStore';
 
 const CurNumDisplay: React.FC = () => {
@@ -16,7 +16,7 @@ const CurNumDisplay: React.FC = () => {
 
     return(
         <div className="numScreen">
-            {finished ? `${roundToFourDecimals(ans)}` : numToDisplay}
+            {finished ? `${roundDecimals(ans, NUM_DECIMALS)}` : numToDisplay}
         </div>
     );
 }

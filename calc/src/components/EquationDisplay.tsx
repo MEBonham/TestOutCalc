@@ -4,9 +4,7 @@ import searchHistory from '../helpers/searchHistory';
 import useInputs from '../store/InputsStore';
 
 const EquationDisplay: React.FC = () => {
-    const finished = useInputs((state) => state.finished);
     const history = useInputs((state) => state.history);
-    const ans = useInputs((state) => state.ans);
     const [pieces, setPieces] = React.useState([]);
 
     React.useEffect(() => {

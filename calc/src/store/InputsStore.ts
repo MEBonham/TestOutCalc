@@ -20,7 +20,6 @@ const useInputs = create((set) => ({
                 }));
                 break;
             case "=": // perform the calculation stored!
-                console.log("flag2");
                 set((state) => ( calculate( state.history, state.numSoFar ) ));
                 break;
             case "+":

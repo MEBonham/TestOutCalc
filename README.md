@@ -1,5 +1,5 @@
 # TestOutCalc
- "homework" assignment for TestOut
+ "homework" assignment for TestOut interview process
 
 ## Instructions to Run Locally:
 Terminal: `cd calc` `yarn` `yarn dev`
@@ -15,4 +15,5 @@ Terminal: `cd calc` `yarn` `yarn dev`
 8. Add input-number display to App
 9. Connect keys and input-number display to store's `numSoFar` variable.
 10. Set up Clear button and display of no-number
-11. 
+11. Program logic
+12. Bug-hunt.

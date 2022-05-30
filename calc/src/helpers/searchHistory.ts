@@ -11,33 +11,18 @@ const searchHistory = (history: any[]) => {
     let
         num1: string = undefined,
         op: string = undefined,
-        num2: string = undefined,
-        i = history.length - 1;
+        num2: string = undefined;
 
-    while (i >= 0) {
-        if (isNum(history[i])) {
-            num2 = history[i];
-            i--;
-            break;
-        }
-        i--;
-    }
-    while (i >= 0) {
+    for (let i = 0; i < history.length; i++) {
         if (!isNum(history[i])) {
             op = history[i];
-            i--;
-            break;
-        }
-        i--;
-    }
-    while (i >= 0) {
-        if (isNum(history[i])) {
+        } else if (isNum(history[i]) && op === undefined) {
             num1 = history[i];
-            i--;
-            break;
+        } else if (isNum(history[i])) {
+            num2 = history[i];
         }
-        i--;
     }
+    
 
     return ({ num1, op, num2 });
 }

@@ -1,8 +1,9 @@
 import React from 'react';
-import CalcButton from './CalcButton';
 
 import '../styling/App.css';
+import CalcButton from './CalcButton';
 import CurNumDisplay from './CurNumDisplay';
+import EquationDisplay from './EquationDisplay';
 
 const App: React.FC = () => {
     const BUTTONS: string[] = ["1", "4", "7", " ",
@@ -13,6 +14,7 @@ const App: React.FC = () => {
 
     return(
         <div className="App">
+            <EquationDisplay />
             <CurNumDisplay />
             <div className="keyboard">
                 {BUTTONS.map((charKey: string, i: number) => (

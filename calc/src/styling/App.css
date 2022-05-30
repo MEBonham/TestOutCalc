@@ -30,9 +30,27 @@
 .App .numScreen {
   width: 120px;
   height: 24px;
+  margin: 4px 0;
   border-radius: 4px;
   padding: 4px;
   background-color: hsl(178, 73%, 89%);
   font-size: 16px;
   text-align: right;
+}
+
+.App .eqScreen {
+  width: 120px;
+  height: 24px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App .eqScreen .eqDispPiece {
+  margin: 0 3px;
+}
+
+.App .eqScreen .ansDisp {
+  text-shadow: 1px 1px 6px red;
 }

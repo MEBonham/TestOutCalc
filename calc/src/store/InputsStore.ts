@@ -36,7 +36,7 @@ const useInputs = create((set) => ({
                 break;
             default: // key is a numerical digit
                 set((state) => ({
-                    numSoFar: `${state.numSoFar}${charKey}`,
+                    numSoFar: ( state.numSoFar === "0" ? charKey : `${state.numSoFar}${charKey}`),
                     finished: false
                 }));
         }

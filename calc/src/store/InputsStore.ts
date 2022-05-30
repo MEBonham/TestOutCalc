@@ -23,16 +23,16 @@ const useInputs = create((set) => ({
                 set((state) => ( calculate( state.history, state.numSoFar ) ));
                 break;
             case "+":
-                set((state) => ( acceptOperand( charKey, state.history, state.numSoFar ) ));
+                set((state) => ( acceptOperand( charKey, state.history, state.numSoFar, state.finished, state.ans ) ));
                 break;
             case "-":
-                set((state) => ( acceptOperand( charKey, state.history, state.numSoFar ) ));
+                set((state) => ( acceptOperand( charKey, state.history, state.numSoFar, state.finished, state.ans ) ));
                 break;
             case "*":
-                set((state) => ( acceptOperand( charKey, state.history, state.numSoFar ) ));
+                set((state) => ( acceptOperand( charKey, state.history, state.numSoFar, state.finished, state.ans ) ));
                 break;
             case "/":
-                set((state) => ( acceptOperand( charKey, state.history, state.numSoFar ) ));
+                set((state) => ( acceptOperand( charKey, state.history, state.numSoFar, state.finished, state.ans ) ));
                 break;
             default: // key is a numerical digit
                 set((state) => ({

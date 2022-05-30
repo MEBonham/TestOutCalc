@@ -1,9 +1,11 @@
 const acceptOperand = (
         symbol: string,
         history: any[],
-        numSoFar: string
+        numSoFar: string,
+        finished: boolean,
+        ans: number
 ) => {
-    const tempHistory: string[] = [ ...history, numSoFar, symbol ];
+    const tempHistory: string[] = finished ? [ ans, symbol ] : [ ...history, numSoFar, symbol ];
     
     return ({
         history: tempHistory,

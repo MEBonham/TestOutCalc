@@ -9,5 +9,7 @@ Terminal: `cd calc` `yarn` `yarn dev`
 2. `yarn create vite` `calc` select react/react-ts
 3. Delete app.tsx and logo
 4. Categorize files in folders
-5. Create App.tsx and CalcButton.tsx
-6. 
+5. Create App.tsx and CalcButton.tsx basic layout
+6. Terminal: `cd calc` `yarn add zustand`
+7. Set up useInputs hook with acceptInput function (only one switch option so far, default, representing numerical digit inputs)
+8. 

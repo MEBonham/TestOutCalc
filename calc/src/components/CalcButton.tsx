@@ -6,7 +6,7 @@ const CalcButton: React.FC = ({ charKey }: string) => {
     const acceptInput = useInputs((state) => state.acceptInput);
 
     return(
-        <button onClick={() => acceptInput(charKey)}>
+        <button onClick={() => acceptInput(charKey)} disabled={charKey === " "}>
             {charKey}
         </button>
     );

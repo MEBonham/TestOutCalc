@@ -13,7 +13,6 @@ const EquationDisplay: React.FC = () => {
         const searchObj = searchHistory(history);
         setPieces([searchObj.num1, searchObj.op, searchObj.num2].filter((el) => el !== undefined));
     }, [history]);
-    console.log(pieces);
 
     return(
         <div className="eqScreen">

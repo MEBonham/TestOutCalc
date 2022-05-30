@@ -20,7 +20,9 @@ const useInputs = create((set) => ({
                 }));
                 break;
             case "=": // perform the calculation stored!
+                console.log("flag2");
                 set((state) => ( calculate( state.history, state.numSoFar ) ));
+                break;
             case "+":
                 set((state) => ( acceptOperand( charKey, state.history, state.numSoFar ) ));
                 break;
@@ -35,7 +37,8 @@ const useInputs = create((set) => ({
                 break;
             default: // key is a numerical digit
                 set((state) => ({
-                    numSoFar: `${state.numSoFar}${charKey}`
+                    numSoFar: `${state.numSoFar}${charKey}`,
+                    finished: false
                 }));
         }
     }

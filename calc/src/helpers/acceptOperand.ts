@@ -7,7 +7,8 @@ const acceptOperand = (
     
     return ({
         history: tempHistory,
-        numSoFar: ""
+        numSoFar: "",
+        finished: false
     });
 }
 

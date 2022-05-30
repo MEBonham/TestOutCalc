@@ -11,7 +11,6 @@ const useInputs = create((set) => ({
                 }));
                 break;
             default: // key is a numerical digit
-                console.log(charKey);
                 set((state) => ({
                     numSoFar: `${state.numSoFar}${charKey}`
                 }));

@@ -1,6 +1,20 @@
+.App {
+  width: 136px;
+  height: 200px;
+  margin: 20px auto;
+  border-radius: 12px;
+  background-color: lightgray;
+  box-shadow: 3px 3px 16px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .App .keyboard {
   width: 120px;
   height: 100px;
+  margin: 4px 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -19,5 +33,6 @@
   border-radius: 4px;
   padding: 4px;
   background-color: hsl(178, 73%, 89%);
+  font-size: 16px;
   text-align: right;
 }

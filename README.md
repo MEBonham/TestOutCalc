@@ -7,4 +7,5 @@ Terminal: `cd calc` `yarn` `yarn dev`
 ## Work Journal:
 1. Git setup
 2. `yarn create vite` `calc` select react/react-ts
-3. 
+3. Delete app.tsx and logo
+4. 

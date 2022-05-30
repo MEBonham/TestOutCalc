@@ -17,6 +17,7 @@
   width: 120px;
   height: 24px;
   border-radius: 4px;
+  padding: 4px;
   background-color: hsl(178, 73%, 89%);
   text-align: right;
 }

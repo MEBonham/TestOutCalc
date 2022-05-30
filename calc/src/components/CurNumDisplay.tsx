@@ -4,10 +4,14 @@ import useInputs from '../store/InputsStore';
 
 const CurNumDisplay: React.FC = () => {
     const num = useInputs((state) => state.numSoFar);
+    const [numToDisplay, setNumToDisplay] = React.useState("0");
+    React.useEffect(() => {
+        setNumToDisplay(num === "" ? "0" : num);
+    }, [num])
 
     return(
         <div className="numScreen">
-            {num}
+            {numToDisplay}
         </div>
     );
 }

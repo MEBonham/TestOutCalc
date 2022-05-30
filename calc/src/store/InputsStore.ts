@@ -5,6 +5,11 @@ const useInputs = create((set) => ({
     numSoFar: "",
     acceptInput: (charKey: string) => {
         switch(charKey) {
+            case "C": // all clear
+                set(() => ({
+                    numSoFar: ""
+                }));
+                break;
             default: // key is a numerical digit
                 console.log(charKey);
                 set((state) => ({

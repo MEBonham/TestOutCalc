@@ -14,4 +14,5 @@ Terminal: `cd calc` `yarn` `yarn dev`
 7. Set up useInputs hook with acceptInput function (only one switch option so far, default, representing numerical digit inputs)
 8. Add input-number display to App
 9. Connect keys and input-number display to store's `numSoFar` variable.
-10. 
+10. Set up Clear button and display of no-number
+11. 

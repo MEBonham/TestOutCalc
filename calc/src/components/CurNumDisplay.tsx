@@ -15,7 +15,7 @@ const CurNumDisplay: React.FC = () => {
 
     return(
         <div className="numScreen">
-            {finished ? roundToFourDecimals(ans) : numToDisplay}
+            {finished ? `${roundToFourDecimals(ans)}` : numToDisplay}
         </div>
     );
 }

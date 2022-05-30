@@ -14,20 +14,12 @@ const EquationDisplay: React.FC = () => {
         setPieces([searchObj.num1, searchObj.op, searchObj.num2].filter((el) => el !== undefined));
     }, [history]);
 
-    const roundToFourDecimals = (num: number) => {
-        return( Math.round(num * 10000) / 10000);
-    }
-
     return(
         <div className="eqScreen">
             <p>
                 {pieces.map((pieceStr: string, i: number) => (
                     <span className="eqDispPiece" key={i}>{pieceStr}</span>
                 ))}
-                {finished && <span>
-                    <span className="eqDispPiece">=</span>
-                    <span className="eqDispPiece ansDisp">{roundToFourDecimals(ans)}</span>
-                </span>}
             </p>
         </div>
     );
